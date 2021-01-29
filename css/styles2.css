@@ -47,37 +47,9 @@ body {
 }
 /* Home */
 
-nav {
-  display: flex;
-  justify-content: space-between;
-  /* background-color: #0d0d0d; */
-  color:  white;
-  padding: 20px 30px;
-  border-bottom: 0px solid #0d0d0d;
-  font-family:'Raleway', sans-serif;
-  src: url(https://fonts.googleapis.com/css2?family=Raleway&display=swap);
-}
-
-a:link {
-  color: white;
-  text-decoration: none;
-}
-
-a:visited {
-  color: white;
-}
-
-.navstatic {
-  padding: 0px;
-  margin: 0px;
-
-}
-
-
 .biotext {
 /* background-color: #0d0d0d */
 }
-
 
 .biotext p{
 z-index: 1;
@@ -89,84 +61,4 @@ font-weight: normal;
 font-size: 18pt;
 line-height: 26pt;
 color: #FFFFFF;
-}
-
-.col1 {
-  width: 50%;
-}
-.col2 {
-  width: 30%;
-  justify: end;
-}
-.col3 {
-  width: 25%;
-  justify: end
-}
-
-.tocnumb {
-  padding-top: 20px;
-  font-size: 30pt;
-  color: white;
-  padding-right:  40px;
-  font-family: sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 64px;
-  line-height: 75px;
-  opacity: 50%;
-
-}
-
-/* Work */
-
-.work {
-position: absolute;
-width: 28px;
-height: 18px;
-left: 140px;
-top: 58px;
-font-family: sans-serif;
-font-style: normal;
-font-weight: normal;
-font-size: 12px;
-line-height: 14px;
-color: #FFFFFF;
-}
-
-/* Kashish Dusad */
-
-.about {
-position: absolute;
-width: 80px;
-height: 14px;
-left: 536px;
-top: 65px;
-font-family: sans-serif;
-font-style: normal;
-font-weight: normal;
-font-size: 12px;
-line-height: 14px;
-color: #FFFFFF;
-}
-
-/* About me */
-
-.aboutme {
-position: absolute;
-width: 876px;
-height: 196px;
-font-family: Roboto;
-font-style: normal;
-font-weight: normal;
-font-size: 24px;
-line-height: 28px;
-color: #FFFFFF;
-}
-
-h5 .tocnumb {
-  margin-top: 100px;
-}
-
-h5 {
-  margin-top: -15px;
 }
