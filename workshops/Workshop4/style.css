@@ -1,0 +1,130 @@
+div {
+  padding: 20px 20px;
+}
+
+@font-face {
+  font-family: Raleway;
+  src: url(fonts/Raleway.otf);
+}
+
+body {
+  background-color: #FFFADC;
+}
+
+.container {
+  width: 980px;
+  margin: auto;
+}
+
+.section {
+  width: 850px;
+  margin: auto;
+}
+
+#section1 {
+  background-color: #F7E6E0;
+  border-radius: 30px;
+}
+
+#section2 {
+  background-color: #D7CCEF;
+  border-radius: 30px;
+}
+
+#section3 {
+  background-color: #CAD9F5;
+  z-index: 1;
+  border-radius: 30px;
+}
+
+#section4 {
+  background-color: #D5F0FF;
+  border-radius: 30px;
+}
+
+h1, h2, h3 {
+  font-family: Raleway;
+  text-align: center;
+}
+
+h1 {
+  font-size: 45pt;
+}
+
+h2 {
+  font-size: 30pt;
+}
+
+h3 {
+  font-size: 20pt;
+}
+
+.space {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.paragraph {
+  width: 850px;
+  margin: auto;
+  color: #141414;
+}
+
+button {
+  border-radius: 10px;
+  padding: 5px 30px;
+  background-color: white;
+  color: black;
+}
+
+.buttonbox {
+  padding: 30px 0 30px 0;
+  display: flex;
+  justify-content: space-around;
+  width: 850px;
+  margin: auto;
+}
+
+/* flamingo styles */
+#flamingodiv {
+  display: flex;
+  justify-content: center;
+}
+
+#flamingo {
+  z-index: 4;
+}
+
+.grass {
+  width: 200px;
+  height: 80px;
+  background-color: green;
+  position: absolute;
+  margin-top: 155px;
+  z-index: 3;
+}
+
+.sky {
+  width: 200px;
+  height: 200px;
+  background-color: lightblue;
+  position: absolute;
+  z-index: 2;
+}
+
+.col_img {
+  width: 250px;
+  padding: 35px 20px 35px;
+}
+
+#centered_imgs {
+  text-align: center;
+}
+.col2container {
+  display: flex;
+  justify-content: center;
+}
+.col2 {
+  width: 45%;
+  padding: 0 20px 0 20px;
+}
