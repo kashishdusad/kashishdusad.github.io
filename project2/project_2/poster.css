@@ -1,0 +1,148 @@
+body {
+  background-color: #000000;
+  font-family:'Raleway', sans-serif;
+  src: url(https://fonts.googleapis.com/css2?family=Raleway&display=swap);
+  color: white;
+}
+
+.container {
+  z-index: 1;
+  padding: 50px 20px 20px 30px;
+  display: flex;
+  justify-content: space-around;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+}
+/* Home */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 40px;
+  font-family:'Raleway', sans-serif;
+  src: url(https://fonts.googleapis.com/css2?family=Raleway&display=swap);
+}
+
+.content {
+  color:  white;
+  font-size: 18px;
+  line-height: 26px;
+  display: flex;
+  justify-content:flex-end;
+}
+
+.col_img {
+  width:200px;
+  height:70px;
+}
+
+.col_img1 {
+  width:700px;
+  height:900px;
+}
+
+.col1 {
+  width: 50%;
+  z-index: 0;
+}
+
+.col2 {
+  width: 50%;
+  padding: 0px 20px 40px 20px;
+  z-index: 2
+}
+
+.col3{
+  padding-left: 20px;
+  width: 100%;
+}
+
+.row1 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 46pt;
+  line-height: 52pt;
+  color: #FFFFFF;
+}
+
+.row2 {
+  padding-top: 20%;
+  padding-right: 11%;
+  font-weight: normal;
+  font-size: 18pt;
+  line-height: 30pt;
+  color: #FFFFFF;
+}
+
+.row3 {
+  padding-top: 40%;
+  font-weight: normal;
+  font-size: 15pt;
+  line-height: 30pt;
+  color: #FFFFFF;
+}
+
+.typing {
+  padding-top: 1%;
+  width: 8ch;
+  animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+  animation-iteration-count: infinite;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 46pt;
+  line-height: 55pt;
+  color: #AF7400;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .content {
+    font-size: 13px;
+    line-height: 20px;
+}
+
+  .col_img1 {
+      width:300px;
+      height:500px;
+  }
+
+  .row1 {
+    font-size: 26pt;
+    line-height: 32pt;
+  }
+
+  .row2 {
+    font-size: 11pt;
+    line-height: 17pt;
+  }
+
+  .row3 {
+    padding-top: 22%;
+    font-size: 9pt;
+    line-height: 15pt;
+  }
+
+  .typing {
+    font-size: 26pt;
+    line-height: 32pt;
+  }
+
+}
