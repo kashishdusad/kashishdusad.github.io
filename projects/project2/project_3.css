@@ -1,0 +1,255 @@
+body {
+  background-color: #000000;
+  font-family:'Caudex', serif;
+  src: url("https://fonts.googleapis.com/css2?family=Caudex&display=swap");
+  color: white;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 20px;
+}
+
+li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+}
+
+
+.container {
+  width: 100%;
+  flex: wrap;
+}
+
+/* In Praise of */
+.subtitle {
+  position: absolute;
+  width: 245px;
+  height: 50px;
+  left: 615px;
+  top: 328px;
+  font-family: 'Caudex';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 114.97%;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+  /* SHADOWS */
+.title {
+  position: absolute;
+  width: 714px;
+  height: 115px;
+  padding-left: 380px;
+  top: 374px;
+  font-family: 'Caudex';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 100px;
+  line-height: 114.97%;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.275em;
+  color: #000000;
+  text-shadow: 0px 4px 21px rgba(255, 255, 255, 0.95);
+  overflow: hidden;
+  background: linear-gradient(90deg, #000, #fff, #000);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: animate 3s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+
+@keyframes animate {
+  0% {
+    background-position: -500%;
+  }
+  100% {
+    background-position: 500%;
+  }
+}
+}
+
+a:link {
+  color: #9D6800;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #9D6800;
+  text-decoration: none;
+}
+
+.arrow1 {
+  /* Line 1 */
+  position: absolute;
+  width: 24.08px;
+  height: 0px;
+  left: 702px;
+  top: 564px;
+  border: 2px solid #FFFFFF;
+  box-shadow: 0px 2px 7px rgba(255, 255, 255, 0.92);
+  transform: rotate(45deg);
+}
+
+.arrow2 {
+  /* Line 2 */
+  position: absolute;
+  width: 24.08px;
+  height: 0px;
+  left: 720px;
+  top: 564px;
+  border: 2px solid #FFFFFF;
+  box-shadow: 0px 2px 7px rgba(255, 255, 255, 0.92);
+  transform: matrix(-0.71, 0.71, 0.71, 0.71, 0, 0);
+}
+
+.content1 {
+  /* Description */
+  position: absolute;
+  width: 881px;
+  height: 684px;
+  left: 288px;
+  top: 790px;
+  font-family: 'Caudex';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  color: #747474;
+  padding-bottom: 300px;
+}
+
+.content2 {
+  /* Description */
+  position: absolute;
+  width: 881px;
+  height: 684px;
+  left: 288px;
+  padding-bottom: 100px;
+}
+
+
+#read-more { display: none; }
+
+#read-more ~ .quote {
+  max-height: 0px;
+}
+
+#read-more:checked ~ .quote {
+  max-height: 310px;
+}
+
+* { margin: 0; padding: 0; }
+
+.button {
+  position: absolute;
+  width: 38px;
+  height: 20px;
+  left: 860px;
+  top: 1275px;
+  background: #000000;
+  box-shadow: 0px 4px 19px rgba(255, 255, 255, 0.56);
+  border-radius: 22px;
+  display: inline-block;
+  outline: none;
+}
+
+.button:active {
+  background: hsl(0, 0%, 98%);
+  box-shadow: inset 0 0 5px hsl(0, 0%, 85%);
+}
+
+.button:hover {
+  background: #FFFFFF;
+}
+
+.quote {
+  text-align: justify;
+  overflow: hidden;
+  padding: 0 0 10px;
+  position: absolute;
+  width: 300px;
+  max-height: 0;
+  transition: max-height 270ms;
+}
+
+#read-more ~ .quote:after {
+  position: absolute;
+  bottom: 10px;
+  right: 0;
+  height: 40px;
+  padding-left: 50px;
+  opacity: 1;
+  visibility: visible;
+  transition: all 200ms;
+  color: #aaa;
+  font-style: oblique;
+  line-height: 40px;
+}
+
+#read-more:checked ~ .quote:after {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.quote {
+  position: absolute;
+  width: 530px;
+  height: 361px;
+  left: 460px;
+  top: 1300px;
+  padding-bottom: 50px;
+  font-family: 'Caudex';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 45px;
+  text-align: center;
+  letter-spacing: -0.005em;
+  color: #FFFFFF;
+}
+}
+
+@media screen and (max-width: 475px) {
+
+  li {
+    font-size: 12px;
+  }
+
+  .container {
+    width: 30%;
+  }
+
+  .subtitle {
+    position: absolute;
+    width: 30%;
+    align: center;
+    font-size: 12px;
+  }
+
+  .title {
+      font-size: 15px;
+    }
+
+
+  .content1 {
+    position: absolute;
+    width: 30%;
+    font-size: 9px;
+    line-height: 15px;
+  }
+
+}

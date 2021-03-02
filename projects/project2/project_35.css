@@ -1,0 +1,143 @@
+body {
+  background-color: #000000;
+  font-family:'Caudex', serif;
+  src: url("https://fonts.googleapis.com/css2?family=Caudex&display=swap");
+  color: white;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 20px;
+}
+
+li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+}
+
+div {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  padding-top: 70px;
+  z-index: 1;
+}
+
+.content {
+    position: absolute;
+    width: 881px;
+    height: 684px;
+    left: 288px;
+    top: 150px;
+    font-family: 'Caudex';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+    color: #747474;
+  }
+}
+
+.circle {
+    mix-blend-mode: difference;
+    box-shadow: 0px 4px 40px 32px rgba(255, 255, 255, 0.48);
+}
+
+.circle {
+    position: absolute;
+    width: 550px;
+    height: 550px;
+    left: 160px;
+    top: 10px;
+    z-index: 2;
+    border-radius: 50%;
+    background: #000000;
+    mix-blend-mode: difference;
+    box-shadow: 0px 4px 40px 32px rgba(255, 255, 255, 0.48);
+    -webkit-animation: pulse 2s linear 1s infinite;
+}
+
+.circle:hover {
+    position: absolute;
+    width: 550px;
+    height: 550px;
+    left: 160px;
+    top: 10px;
+    z-index: 2;
+    border-radius: 50%;
+    background: #C4C4C4;
+    mix-blend-mode: difference;
+    box-shadow: 0px 4px 40px 32px rgba(255, 255, 255, 0.48);
+    -webkit-animation: pulse 2s linear 1s infinite;
+}
+
+@-webkit-keyframes pulse {
+  0% { box-shadow:0 0 50px #C4C4C4, inset 0 0 50px #C4C4C4; }
+  50% { box-shadow:0 0 22px #C4C4C4, inset 0 0 22px #C4C4C4; }
+  100% { box-shadow:0 0 50px #C4C4C4, inset 0 0 50px #C4C4C4; }
+}
+
+.quote {
+  position: absolute;
+  padding-right: 50px;
+  font-family: 'Caudex';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 45px;
+  text-align: right;
+  letter-spacing: -0.005em;
+  color: #FFFFFF;
+}
+
+@media screen and (max-width: 475px) {
+
+  li {
+    font-size: 12px;
+  }
+
+  .container {
+    width: 30%;
+  }
+
+  .content1 {
+    position: absolute;
+    width: 30%;
+    font-size: 9px;
+    line-height: 15px;
+  }
+
+  .content2 {
+    position: absolute;
+    width: 30%;
+    font-size: 9px;
+    line-height: 15px;
+  }
+  .quote {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .quote1 {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .circle {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+  }
+  .circle:hover {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+  }
+}

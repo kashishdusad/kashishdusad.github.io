@@ -1,0 +1,273 @@
+body {
+  background-color: #FFFFFF;
+  font-family:'Caudex', serif;
+  src: url("https://fonts.googleapis.com/css2?family=Caudex&display=swap");
+  color: black;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 20px;
+}
+
+span {
+  font-family: 'Caudex';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 50px;
+  color: #656565;
+}
+
+li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+}
+
+a:link {
+  color: #9D6800;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #9D6800;
+  text-decoration: none;
+}
+
+.content1 {
+  /* Description */
+  position: absolute;
+  width: 881px;
+  height: 684px;
+  left: 288px;
+  top: 150px;
+  font-family: 'Caudex';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  color: #656565;
+}
+
+.content1: hover {
+  color: #656565;
+  font-weight: bold;
+}
+
+.content2 {
+  /* Description */
+  position: absolute;
+  width: 881px;
+  height: 384px;
+  left: 288px;
+  top: 800px;
+  font-family: 'Caudex';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  color: #656565;
+  padding-bottom: 20px;
+}
+
+#read-more { display: none; }
+
+#read-more ~ .quote {
+  max-height: 0px;
+}
+
+#read-more:checked ~ .quote {
+  max-height: 310px;
+}
+
+* { margin: 0; padding: 0; }
+
+.button {
+  position: absolute;
+  width: 38px;
+  height: 20px;
+  left: 610px;
+  top: 435px;
+  background: #FFFFFF;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 22px;
+  display: inline-block;
+  outline: none;
+}
+
+.button:active {
+  background: hsl(0, 0%, 98%);
+  box-shadow: inset 0 0 5px hsl(0, 0%, 85%);
+}
+
+.quote {
+  text-align: left;
+  overflow: hidden;
+  padding: 0 0 10px;
+  position: absolute;
+  width: 300px;
+  max-height: 0;
+  transition: max-height 200ms;
+}
+
+#read-more ~ .quote:after {
+  position: absolute;
+  bottom: 10px;
+  right: 0;
+  height: 40px;
+  padding-left: 50px;
+  opacity: 1;
+  visibility: visible;
+  transition: all 200ms;
+  color: #aaa;
+  font-style: oblique;
+  line-height: 40px;
+}
+
+#read-more:checked ~ .quote:after {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.quote {
+  position: absolute;
+  width: 870px;
+  height: 461px;
+  left: 290px;
+  top: 510px;
+  font-family: 'Caudex';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 50px;
+  overflow: hidden;
+  color: #D8D8D8;
+}
+
+  #read-more1 { display: none; }
+
+  #read-more1 ~ .quote1 {
+    max-height: 0px;
+  }
+
+  #read-more1:checked ~ .quote1 {
+    max-height: 310px;
+  }
+
+  * { margin: 0; padding: 0; }
+
+.button1 {
+  position: absolute;
+  width: 38px;
+  height: 20px;
+  left: 840px;
+  top: 1055px;
+  background: #FFFFFF;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 22px;
+  display: inline-block;
+  outline: none;
+}
+
+.button1:active {
+  background: hsl(0, 0%, 98%);
+  box-shadow: inset 0 0 5px hsl(0, 0%, 85%);
+}
+
+.quote1 {
+  text-align: left;
+  overflow: hidden;
+  padding: 0 0 10px;
+  width: 300px;
+  max-height: 0;
+  transition: max-height 200ms;
+}
+
+#read-more1 ~ .quote1:after {
+  position: absolute;
+  bottom: 10px;
+  right: 0;
+  height: 40px;
+  padding-left: 50px;
+  opacity: 1;
+  visibility: visible;
+  transition: all 200ms;
+  color: #aaa;
+  font-style: oblique;
+  line-height: 40px;
+}
+
+#read-more1:checked ~ .quote1:after {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.quote1 {
+  position: absolute;
+  width: 700px;
+  height: 361px;
+  left: 370px;
+  top: 1070px;
+  padding-bottom: 50px;
+  font-family: 'Caudex';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 45px;
+  text-align: center;
+  letter-spacing: -0.005em;
+  color: #656565;
+}
+
+
+
+@media screen and (max-width: 475px) {
+
+  li {
+    font-size: 12px;
+  }
+
+  .container {
+    width: 30%;
+  }
+
+  .content1 {
+    position: absolute;
+    width: 30%;
+    font-size: 9px;
+    line-height: 15px;
+  }
+
+  .content2 {
+    position: absolute;
+    width: 30%;
+    font-size: 9px;
+    line-height: 15px;
+  }
+  .quote {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .quote1 {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .circle {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+  }
+  .circle:hover {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+  }
+}
