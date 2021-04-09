@@ -1,0 +1,136 @@
+body {
+ font-family: 'Nunito', sans-serif;
+ font-weight: 300;
+ background-color: #070707;
+}
+
+h1 {
+    position: relative;
+    font-size: 60px;
+    color: white;;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    margin-bottom: 10px;
+    margin-right: 3px;
+
+  }
+
+hr {
+  margin-top: 0;
+  line-height: 10px solid #FFEDE3;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a::after {
+  text-decoration: none;
+}
+
+h2, h3, h4, h5, h6 {
+ font-family: 'Raleway', sans-serif;
+ font-weight: 700;
+ color: white;;
+ margin-right: 3px;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.shelf {
+  border-bottom: 10px solid #FFEDE3;
+  align-items: flex-end;
+  margin-bottom: 2em;
+  margin-top: 10px;
+}
+
+.shelf .book-spine {
+  text-align: left;
+  background: #070707;
+  color: white;
+  height: fit-content;
+  padding: 10px 20px;
+  margin-bottom: 2px;
+  margin-right: 5px;
+  line-height: 30px;
+  font-size: 20px;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: 0.385em;
+  text-transform: uppercase;
+
+
+  cursor: pointer;
+}
+
+.shelf .book-spine:hover {
+  background: #FFEDE3;
+  color: #ffd2c7;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.shelf .book-spine.active {
+  background: #FFEDE3;
+}
+
+.shelf .book-spine:hover {
+  background: #FFF6F0;
+}
+
+.book-detail {
+  display: flex;
+}
+
+.book-detail .figure {
+  width: 200px;
+  flex: none;
+  margin-right: 30px;
+}
+
+.book-detail .cover-image {
+  width: 100%;
+  border-bottom: 10px solid #FFEDE3;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.book-detail .info {
+  max-width: 600px;
+}
+
+.book-detail .title {
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-top: 0;
+  border-bottom: 10px solid #FFEDE3;
+}
+
+
+.book-detail .description {
+  margin-top: 0.5em;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.more {
+  background-color: #FFEDE3;
+  margin-top: 50px;
+  padding: 10px;
+}
+
+@media (max-width: 600px) {
+  .book-detail {
+    flex-direction: column;
+  }
+  .book-detail .figure {
+    width: 100%;
+    max-width: 300px;
+    margin: auto;
+    margin-bottom: 2em;
+  }
+}
