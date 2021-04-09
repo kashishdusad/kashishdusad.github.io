@@ -7,11 +7,10 @@ var Airtable = require("airtable");
 console.log(Airtable);
 
 // use the airtable library to get a variable that represents one of our bases
-var base = new Airtable({apiKey: 'keyr7FsjymdtEbmFp'}).base('appKSzCaDE2XQzPXp'
-);
+var base = new Airtable({apiKey: 'keyr7FsjymdtEbmFp'}).base('appKSzCaDE2XQzPXp');
 
 //get the "books" table from the base, select ALL the records, and specify the functions that will receive the data
-base("books").select({}).eachPage(gotPageOfBooks, gotAllBooks);
+base("Books").select({}).eachPage(gotPageOfBooks, gotAllBooks);
 
 // an empty array to hold our book data
 const books = [];
@@ -32,17 +31,19 @@ function gotAllBooks(err) {
   // report an error, you'd want to do something better than this in production
   if (err) {
     console.log("error loading books");
-    console.error(error);
+    console.error(err);
     return;
   }
 
   // call function to show the books
-  showBooks();
+  try{
+    showBooks();
+  } catch (e) {
+  console.log(e);
+  }
 }
 
 /////////////////////////////////////////////////////////////////////////////////
-
-
 
 // create the book-spines on the shelf
 function showBooks() {
