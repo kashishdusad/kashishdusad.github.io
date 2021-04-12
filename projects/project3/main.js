@@ -78,7 +78,8 @@ function showBook(Magnets, div) {
   bookDetail.getElementsByClassName("Name")[0].innerText = Magnets.fields.Name; //
   bookDetail.getElementsByClassName("country")[0].innerText =
     Magnets.fields.country;
-  bookDetail.getElementsByClassName("URL")[0].href = Magnets.fields.URL;
+  console.log(bookDetail.getElementsByClassName("url"))
+  bookDetail.getElementsByClassName("url")[0].href = Magnets.fields.url;
   bookDetail.getElementsByClassName("Attachments")[0].src =
     Magnets.fields.Attachments[0].url;
 
