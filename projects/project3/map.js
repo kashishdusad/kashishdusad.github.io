@@ -1,63 +1,53 @@
-const SCREEN_SIZE = Math.min(640, window.innerWidth);
-let points = [];
-let savedPixels;
-let img;
-let slider;
+const canvas = document.querySelector('#draw');
+  const ctx = canvas.getContext('2d');
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+  ctx.strokeStyle = '#BADA55'; //ctx is the canvas
+  ctx.lineJoin = 'round';
+  ctx.lineCap = 'round';
+  ctx.lineWidth = 10;
+  // ctx.globalCompositeOperation = 'multiply';
 
-function preload() {
-    img = loadImage('https://raw.githubusercontent.com/florinpop17/work-journal/master/Projects/006%20-%20Dotted%20World%20Map/map.jpg');
+  let isDrawing = false;
+  let lastX = 0;
+  let lastY = 0;
+  let hue = 0;
+  let direction = true;
+
+function draw(e) {
+  if (!isDrawing) return; // stop the fn from running when they are not moused down
+  console.log(e);
+  ctx.strokeStyle = `hsl(${hue}, 100%, 50%)`;
+  ctx.beginPath();
+  // start from
+  ctx.moveTo(lastX, lastY);
+  // go to
+  ctx.lineTo(e.offsetX, e.offsetY);
+  ctx.stroke();
+  [lastX, lastY] = [e.offsetX, e.offsetY];
+
+  hue++;
+  if (hue >= 360) {
+    hue = 0;
+  }
+  if (ctx.lineWidth >= 20 || ctx.lineWidth <= 1) {
+    direction = !direction;
+  }
+
+  if(direction) {
+    ctx.lineWidth++;
+  } else {
+    ctx.lineWidth--;
+  }
+
 }
 
-function setup() {
-    // Create slider and add change event
-    slider = createSlider(1, 10, 3, 1);
-    slider.changed(() => {
-        drawImageFromPoints();
-    });
+canvas.addEventListener('mousedown', (e) => {
+  isDrawing = true;
+  [lastX, lastY] = [e.offsetX, e.offsetY];
+});
 
-    // Create canvas
-    createCanvas(SCREEN_SIZE, SCREEN_SIZE * 3 / 4);
-	pixelDensity(1);
 
-    // Get image and center it on the screen
-    imageMode(CENTER);
-    img.resize(SCREEN_SIZE, SCREEN_SIZE);
-    image(img, width / 2, height / 2);
-
-    // Save pixels
-    loadPixels();
-    drawImageFromPoints();
-}
-
-function getPoints(sliderValue) {
-    // reset points array
-    points = []
-
-    // Save all points
-    for(let x = 0; x < width; x+= sliderValue) {
-        for(let y = 0; y < height; y+= sliderValue) {
-            let index = (x + y * width) * 4;
-
-            // Only get the non-white values
-            if(pixels[index] < 200) {
-                points.push({
-                    x,
-                    y
-                });
-            }
-        }
-    }
-}
-
-function drawImageFromPoints() {
-    let sliderValue = slider.value();
-
-    getPoints(sliderValue);
-
-    background(0);
-    points.forEach(p => {
-        noStroke();
-        fill(255);
-        ellipse(p.x, p.y, sliderValue, sliderValue);
-    });
-}
+canvas.addEventListener('mousemove', draw);
+canvas.addEventListener('mouseup', () => isDrawing = false);
+canvas.addEventListener('mouseout', () => isDrawing = false);
