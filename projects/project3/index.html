@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bookshelf</title>
+    <title>Project 3</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Caudex&display=swap" rel="stylesheet">
@@ -12,27 +12,25 @@
 </head>
   </head>
   <body>
-    <h1>WHERE WOULD YOU <br> LIKE TO GO?</h1>
-    <div class="arrow" id="page"></div>
+    <h1>
+    <span>WHERE WOULD YOU LIKE TO GO?
+  </h1>
+    <a class="arrow" id="page" href="map.html"></a>
     <div class="content">
     <article id="book-detail" class="book-detail hidden">
         <section class="info">
           <h2 class="Name">Becoming</h2>
           <p class="country">India</p>
-          <div class="arrow" id="tab"></div>
           <h5 id="who">1 Person </h5>
           <h5 id="how">Adult </h5>
-          <button class="barcode">400123021</button>
-          <a class="url arrow" href="https://www.barnesandnoble.com/w/becoming-michelle-obama/1128038172?ean=9781524763138"></a>
+          <a href="https://www.amazon.com/s?k=resin+fridge+magnet+souvenir&crid=1BI4R3J4DRT98&sprefix=resin+frid%2Caps%2C452&ref=nb_sb_ss_ts-doa-p_3_10"><button class="barcode">400123021 </button></a>
+          <a class="url arrow" id="tab" href="https://www.barnesandnoble.com/w/becoming-michelle-obama/1128038172?ean=9781524763138"></a>
+          <img class="Attachments"x src="https://www.cs.princeton.edu/~bwk/tpop.webpage/tpop.jpg" alt="Magnets"/>
+          <img class="Maps" src="https://www.cs.princeton.edu/~bwk/tpop.webpage/tpop.jpg" alt="Maps"/>
         </section>
-      <section class="figure">
-        <img class="Attachments" id="front" src="https://www.cs.princeton.edu/~bwk/tpop.webpage/tpop.jpg" alt="Book Cover"/>
-      <img class="Attachments" id="back" src="https://www.cs.princeton.edu/~bwk/tpop.webpage/tpop.jpg" alt="Book Cover"/>
-      </section>
     </article>
     </div>
-    <div id="shelf" class="shelf">
-    </div>
+    <div id="shelf" class="shelf"></div>
 
     <script src="vendor/airtable.browser.js"></script>
     <script src="main.js" defer></script>

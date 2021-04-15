@@ -73,24 +73,8 @@ function showBook(Magnets, div) {
   bookDetail.getElementsByClassName("country")[0].innerText = Magnets.fields.country;
   console.log(bookDetail.getElementsByClassName("url"))
   bookDetail.getElementsByClassName("url")[0].href = Magnets.fields.URL;
-  bookDetail.getElementsByClassName("front")[0].src= Magnets.fields.Attachments[0].url;
-  bookDetail.getElementsByClassName("back")[0].src= Magnets.fields.Maps[0].url;
-
-  var front = document.createElement('img');
-
-  var back = document.createElement('img');
-
-  bookDetail.style.setProperty('#front')[0].src= Magnets.fields.Attachments[0].url;
-  		front.append(Attachments);
-  		front.classList.add('#back');
-  		back.append(Maps);
-  		back.classList.add('back-side');
-  		cardContainer.append(card);
-
-  		card.append(front);
-  		card.append(back);
-
-
+  bookDetail.getElementsByClassName("Attachments")[0].src= Magnets.fields.Attachments[0].url;
+  bookDetail.getElementsByClassName("Maps")[0].src= Magnets.fields.Maps[0].url;
 
   // remove the .active class from any book spines that have it...
   const shelf = document.getElementById("shelf");

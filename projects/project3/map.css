@@ -1,4 +1,5 @@
 body {
+	background-image: url("map.svg");
 	background-color: black;
 	colour: white;
 	font-family: 'Raleway';
@@ -16,28 +17,48 @@ body {
 	z-index: -1;
 }
 
-/* .map:hover {
-	box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.75);
-	width: 1200px;
-	height: 720px;
-} */
+canvas {
+	width: 100%;
+	height: 100%;
+	z-index: 10;
+}
 
-.pins {
-	position: absolute;
-	height: 120px;
-	width: 120px;
-
-	}
-
-.pins:hover {
-	height: 180px;
-	width: 180px;
+.pin1 {
+padding: 10px 10px 10px 10px;
+}
+.pin2 {
+padding: 10px 40px 10px 10px;
+}
+.pin3 {
+padding: 10px 30px 50px 10px;
+}
+.pin4 {
+padding: 20px 10px 10px 70px;
+}
+.pin5 {
+padding: 10px 40px 60px 10px;
+}
+.pin6 {
+padding: 20px 20px 10px 40px;
+}
+.pin7 {
+padding: 10px 20px 30px 40px;
+}
+.pin8 {
+padding: 30px 10px 30px 10px;
+}
+.pin9 {
+padding: 10px 20px 30px 10px;
+}
+.pin10 {
+padding: 10px 20px 10px 30px;
 }
 
 #pins {
 		cursor: pointer;
 		position: absolute;
 		z-index:3;
-		height: 70px;
-    width: 70px;
+		height: 200px;
+    width: 200px;
+		margin: 0;
 }
