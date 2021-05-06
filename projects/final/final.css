@@ -1,0 +1,172 @@
+body {
+  background-color: #FFF2EA;
+  font-family: Didot;
+}
+
+img {
+  cursor: alias;
+  width: 50px;
+  height: 50px;
+}
+
+img:hover {
+  transform: rotateY(180deg);
+}
+
+#one {
+  margin-left: 48%;
+  margin-top: 30%;
+}
+
+#two {
+  margin-top: 20px;
+  margin-left: 47%;
+}
+
+#three {
+  transform: rotateY(180deg);
+}
+
+
+p{
+  font-size: 25px;
+  line-height: 40px;
+  text-align: left;
+  margin-top: 200px;
+  margin-left: 250px;
+  margin-right: 250px;
+  animation-name: paragraph;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+
+
+@keyframes paragraph {
+  0% {transform: translateX(-1000px)}
+}
+
+.word{
+  position: absolute;
+  height: 100px;
+  top: 435px;;
+  text-align: center;
+  font-size: 60px;
+  line-height: 80px;
+  text-transform: uppercase;
+	transform: translateY(-50%);
+	margin-left: 260px;
+}
+
+.text-box{
+  font-size: 60px;
+  line-height: 80px;
+  height: 100px;
+  top: 450px;;
+  text-transform: uppercase;
+  margin-left: 450px;
+	text-align: left;
+	position: relative;
+}
+
+.text-box span{
+	display: inline-block;
+	position: absolute;
+	transform: rotateX(-90deg);
+	opacity: 0;
+	animation-timing-function: ease;
+}
+
+.text-box span:nth-child(1){
+	animation: rollDown 10s forwards infinite;
+}
+
+.text-box span:nth-child(2){
+	animation: rollDown2 10s forwards infinite;
+}
+
+.text-box span:nth-child(3){
+	animation: rollDown3 10s forwards infinite;
+}
+
+@keyframes rollDown {
+	0%{
+		top: -200px;
+		transform: rotateX(-90deg);
+	}
+	11%{
+		top: -74px;
+		transform: rotateX(0deg);
+		opacity: 1;
+	}
+	22%{
+		top: -74px;
+		transform: rotateX(0deg);
+		opacity: 1;
+	}
+	33%{
+		top: 50px;
+		transform: rotateX(30deg);
+		opacity: 0;
+	}
+}
+
+@keyframes rollDown2 {
+	33%{
+		top: -200px;
+		transform: rotateX(-90deg);
+	}
+	44%{
+		top: -74px;
+		transform: rotateX(0deg);
+		opacity: 1;
+	}
+	55%{
+		top: -74px;
+		transform: rotateX(0deg);
+		opacity: 1;
+	}
+	66%{
+		top: 50px;
+		transform: rotateX(30deg);
+		opacity: 0;
+	}
+}
+
+@keyframes rollDown3 {
+	66%{
+		top: -200px;
+		transform: rotateX(-90deg);
+	}
+	77%{
+		top: -74px;
+		transform: rotateX(0deg);
+		opacity: 1;
+	}
+	88%{
+		top: -74px;
+		transform: rotateX(0deg);
+		opacity: 1;
+	}
+	99%{
+		top: 50px;
+		transform: rotateX(30deg);
+		opacity: 0;
+	}
+}
+
+@keyframes slideColor{
+	0%{
+		background-color: #387780;
+	}
+	33%{
+		background-color: #3f88c5;
+	}
+	66%{
+		background-color: #588b8b;
+	}
+	100%{
+		background-color: #387780;
+	}
+}
