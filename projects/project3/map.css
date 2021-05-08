@@ -1,12 +1,21 @@
 body {
-	background-image: url("Map.svg");
+	background-image: url("map.svg");
 	background-color: black;
-	colour: white;
+	color: white;
 	font-family: 'Raleway';
 }
 
-.container {
-	margin: 50px 50px 50px 50px;
+h1 {
+	font-size: 70px;
+	line-height: 0;
+	text-align: center;
+	margin-top: 70px;
+}
+
+p{
+	margin: 0;
+	font-size: 20px;
+	text-align: center;
 }
 
 .map {
@@ -23,42 +32,44 @@ canvas {
 	z-index: 10;
 }
 
-.pin1 {
-padding: 10px 10px 10px 10px;
-}
-.pin2 {
-padding: 10px 40px 10px 10px;
-}
-.pin3 {
-padding: 10px 30px 50px 10px;
-}
-.pin4 {
-padding: 20px 10px 10px 70px;
-}
-.pin5 {
-padding: 10px 40px 60px 10px;
-}
-.pin6 {
-padding: 20px 20px 10px 40px;
-}
-.pin7 {
-padding: 10px 20px 30px 40px;
-}
-.pin8 {
-padding: 30px 10px 30px 10px;
-}
-.pin9 {
-padding: 10px 20px 30px 10px;
-}
-.pin10 {
-padding: 10px 20px 10px 30px;
-}
-
-#pins {
-		cursor: pointer;
+#pin {
+		cursor: move;
 		position: absolute;
 		z-index:3;
-		height: 200px;
-    width: 200px;
-		margin: 0;
+    width: 5%;
+		margin-left: 700px;
+		margin-top: 200px;
+}
+
+#pin2 {
+		cursor: move;
+		position: absolute;
+		z-index:3;
+    width: 5%;
+		margin-left: 300px;
+		margin-top: 100px;
+}
+#pin3 {
+		cursor: move;
+		position: absolute;
+		z-index:3;
+    width: 5%;
+		margin-left: 800px;
+		margin-top: 70px;
+}
+#pin4 {
+		cursor: move;
+		position: absolute;
+		z-index:3;
+    width: 5%;
+		margin-left: 1000px;
+}
+
+#air {
+		cursor: move;
+		position: absolute;
+		z-index:3;
+		width: 10%;
+		margin-left: 500px;
+		margin-top: 100px;
 }
