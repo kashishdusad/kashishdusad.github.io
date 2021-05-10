@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project3</title>
+    <link rel="stylesheet" href="map.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Caudex&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <h1>Doodle Wall</h1>
+    <p>You can write and move elements on this page!</p>
+    <div class= "container">
+    <img src="pin.png" alt="Pin" id="pin">
+    <img src="pin2.png" alt="Pin" id="pin2">
+    <img src="pin3.png" alt="Pin" id="pin3">
+    <img src="pin4.png" alt="Pin" id="pin4">
+    <img src="air.png" alt="Air" id="air">
+  	</div>
+
+  <canvas id="draw" width="900" height="750"></canvas>
+
+
+  <script src="map.js"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#pin, #pin2, #pin3, #pin4, #air" ).draggable();
+  } );
+  </script>
+
+  </body>
+</html>
