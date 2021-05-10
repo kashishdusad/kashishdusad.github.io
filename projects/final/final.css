@@ -9,10 +9,6 @@ img {
   height: 50px;
 }
 
-img:hover {
-  transform: rotateY(180deg);
-}
-
 #one {
   margin-left: 48%;
   margin-top: 30%;
