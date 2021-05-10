@@ -1,0 +1,101 @@
+#button {
+  background-color: #FFE9C0;
+  border-radius: 15px;
+  color:  black;
+  padding: 10px 20px;
+  font-family:'Raleway', sans-serif;
+  border: none;
+}
+
+#clear {
+  background-color: #FFE9C0;
+  border-radius: 15px;
+  color:  black;
+  padding: 10px 20px;
+  font-family:'Raleway', sans-serif;
+  border: none;
+}
+
+#counter {
+  background-color: #FFE9C0;
+  border-radius: 15px;
+  color:  black;
+  padding: 10px 20px;
+  font-family:'Raleway', sans-serif;
+  border: none;
+}
+
+body {
+  margin: 0;
+  background-color: #FFF7E9;
+  -webkit-font-smoothing: antialiased;
+  font-family:'Raleway', sans-serif;
+  src: url(https://fonts.googleapis.com/css2?family=Raleway&display=swap);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  color:  black;
+  padding: 20px 50px 30px 50px;
+
+}
+
+.contain {
+  display: flex;
+  justify-content: space-between;
+}
+
+.col1 {
+  width: 10%;
+  margin: 50px;
+}
+
+.col2 {
+  width: 90%;
+}
+
+
+#container {
+    display: flex;
+    margin: 20px;
+    width: 90%;
+    height: 100%;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.color {
+  height: 50px;
+  width: 50px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+#yellow {
+  background-color: #FFCE76;
+}
+
+#orange {
+  background-color: #FF925A;
+}
+
+#pink {
+  background-color: #FFA5AE;
+}
+
+#blue {
+  background-color: #86E0D6;
+}
+
+#green {
+  background-color: #ACD156;
+}
+
+.shape {
+  height: 50px;
+  width: 50px;
+  margin: 20px;
+  border-radius: 10px;
+  background-color: #d9edff;
+}
